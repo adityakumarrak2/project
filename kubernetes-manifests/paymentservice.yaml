@@ -33,7 +33,7 @@ spec:
         runAsNonRoot: true
         runAsUser: 1000
       containers:
-      - name: server
+      - name: public.ecr.aws/t3h6q1z1/paymentservice
         securityContext:
           allowPrivilegeEscalation: false
           capabilities:

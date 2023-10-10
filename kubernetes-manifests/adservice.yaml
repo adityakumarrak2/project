@@ -33,7 +33,7 @@ spec:
         runAsNonRoot: true
         runAsUser: 1000
       containers:
-      - name: server
+      - name: public.ecr.aws/t3h6q1z1/project-msvc
         securityContext:
           allowPrivilegeEscalation: false
           capabilities:
@@ -41,7 +41,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: adservice
+        image: project-msvc
         ports:
         - containerPort: 9555
         env:
